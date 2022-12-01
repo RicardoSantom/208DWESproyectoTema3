@@ -1,0 +1,238 @@
+/* 
+    Created on : 23 oct 2022, 19:49:56
+    Author     : Richard https://github.com/RicardoSantom en Github
+*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    min-width: 290px;
+}
+body{
+    background-color: #fbfaf8;
+}
+/*main{
+    padding-bottom: 6em;
+}*/
+article{
+    width: 99%;
+    margin-left: 5px;
+}
+header{
+    height: 6em;
+    position: sticky;
+    top: 0px;
+    background-color: #AFBACC;
+    z-index: 2;
+}
+h1{
+    text-align: center;
+    background-color: #AFBACC;
+    color: #516D99;
+    line-height: 1.95em;
+    text-shadow: 2px 2px 2px #333;
+}
+h2{
+    text-align: center;
+    background-color: #CCB3AF;
+    color: #516D99;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px white;
+    width: 100%;
+}
+h3{
+    text-align: center;
+    font-variant-caps: all-small-caps;
+    color: #00006A;
+    margin: 1em 0;
+    width: 100%;
+}
+h4,h5{
+    margin: 1em 0 1em 1em;
+    color: #00006A;
+    text-decoration: underline solid  #00006A;
+}
+article p{
+    margin-left: 2em;
+}
+hr {
+    background-color: transparent;
+    margin-bottom: 4px!important;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top: 3px solid #FFC9B5;
+    display: block;
+    height: 1px;
+    line-height: 19px;
+    margin-bottom: 14px;
+    margin-top: 15px;
+    width: 90%;
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 4rem;
+}
+form fieldset{
+    border-bottom: #516D99 groove 3px;
+    border-left: #516D99 groove 3px;
+    border-right: #516D99 groove 3px;
+    box-shadow: 12px 8px 2px 2px #516D99;
+    background-image: linear-gradient(to right top, #ccb3af, #d7c3c4, #e1d3d7, #ece4e8, #f7f5f7);
+}
+form p,form input,form label{
+    display: inline-block;
+    margin: 0.65rem 0.35rem;
+    line-height: 1.25rem;
+}
+form label{
+    letter-spacing: 1px;
+    color: #00006A;
+    text-decoration: #00006A blink underline solid;
+    text-underline-offset:5px;
+}
+form input{
+    border: 2px #516D99 groove;
+}
+form input:hover{
+    box-shadow: 2px 2px 2px 2px #666666;
+}
+legend{
+    font-weight: bolder;
+    color: #003399;
+    text-transform: uppercase;
+    font-variant: all-small-caps;
+}
+form p{
+    font-size: 12px;
+    display: inline;
+    font-weight: bold;
+}
+.obligatorios{
+    background-color: #ffffcc;
+}
+#NumeroAsignaturas{
+    background-color: #cccccc;
+}
+#botonEnviar{
+    width: 6.5rem;
+    height: 3rem;
+    background-color: #DAF7A6;
+    position: relative;
+    left: 50%;
+    border: 2px #669900 solid;
+    font-weight: bold;
+}
+table{
+    width: 97%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #516D99;
+    margin: 0 auto;
+    box-shadow: 12px 8px 2px 2px #516D99;
+    border: groove;
+}
+caption{
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #00006a;
+    font-variant-caps: all-small-caps;
+}
+thead td,th{
+    color: #00006A;
+    font-variant-caps: all-small-caps;
+    font-size: larger;
+}
+td:first-child{
+    text-align: justify;
+    text-indent: 2%;
+    line-height: 2em;
+}
+td,th{
+    border: 2px #666666 solid;
+    height: 2em;
+    font-weight: bold;
+}
+td a{
+    color: #666666;
+}
+td a:hover{
+    color: #666666;
+    color: #FFC9B5;
+}
+#github:before{
+    font-family: 'Fontawesome';
+    content:'\f09b';
+    background-color:#FFC9B5;
+    font-size: 2em;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#linkedin:before{
+    color: #FFC9B5;
+    font-family: 'FontaWesome';
+    content: '\f08c';
+    font-size: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#curriculum:before{
+    color: #FFC9B5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#linkedin{
+    color: #FFC9B5;
+}
+#curriculum span{
+    color: #FFC9B5;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 0.75em;
+}
+#github,#linkedin{
+    padding-left: 2em;
+    padding-top: 10px;
+}
+#github,#linkedin,#curriculum{
+    padding-bottom: 10px;
+    background-color: inherit;
+}
+footer p{
+    padding-top: 15px;
+}
+footer{
+    min-height: 50px;
+    max-height: 150px;
+    position:fixed;
+    display: flex;
+    float: left;
+    bottom: 0;
+    width: 100%;
+    min-width: 290px;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #516D99;
+    z-index: 2;
+    justify-content: center;
+    color:#F5FEFF;
+    background: rgb(2,0,40);
+    background: linear-gradient(90deg, rgba(2,0,40,1) 0%, rgba(81,109,153,1) 100%, rgba(251,250,248,1) 100%);
+}
+#enlacePrincipal,#enlaceSecundario{
+    color: #fbfaf8;
+    margin-top: 1em;
+    background-color: inherit;
+}
+#enlaceSecundario{
+    margin-left: 2em;
+}
