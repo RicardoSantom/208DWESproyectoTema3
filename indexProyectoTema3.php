@@ -120,6 +120,12 @@
                         <td><a href="mostrarcodigo/mostrarEjercicio016.php">Mostrar</a></td>
                     </tr>
                     <tr>
+                        <td><span>017.~ </span>17 Inicializar un array donde almacenamos el nombre de las personas que tienen
+                            reservado el asiento en un teatro de 20 filas y 15 asientos por fila</td>
+                        <td><a href="codigoPHP/ejercicio017.php">Ejecutar</a></td>
+                        <td><a href="mostrarcodigo/mostrarEjercicio017.php">Mostrar</a></td>
+                    </tr>
+                    <tr>
                         <td><span>020.~ </span>Convertir la LibreriaValidacionFormularios.php en una clase ValidacionFormularios.php. El profesor facilitará a los alumnos la clase
                             AAMMDDValidacionFormularios.php desarrollada en el curso anterior como punto de partida.</td>
                         <td><a href="codigoPHP/ejercicio020.php">Ejecutar</a></td>
@@ -162,7 +168,7 @@
         </main>
         <footer>
             <p>2022-23  IES LOS SAUCES.<a href="../index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé </a>© Todos los derechos reservados</p>
-            <a href="https://github.com/RicardoSantom" target="blank" id="github" title="RicardoSantom en GitHub"></a>
+            <a href="https://github.com/RicardoSantom/208DWESproyectoTema3" target="blank" id="github" title="RicardoSantom en GitHub"></a>
             <a href="https://www.linkedin.com/in/ricardo-santiago-tom%C3%A9/" id="linkedin" title="Ricardo Santiago Tomé en Linkedim" target="_blank"></a>
             <a href="../doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">face</span></a>
             <a href="../208DWESproyectoDWES/index.php" id="enlaceSecundario" title="Enlace a Index DWES">Index DWES</a>
