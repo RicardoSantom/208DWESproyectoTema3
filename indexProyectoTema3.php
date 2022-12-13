@@ -155,6 +155,11 @@
                         <td><a href="mostrarcodigo/mostrarEjercicio024.php">Mostrar</a></td>
                     </tr>
                     <tr>
+                        <td><span>025.~ </span>Enunciado: Trabajar en PlantillaFormulario.php mi plantilla para hacer formularios como churros</td>
+                        <td><a href="codigoPHP/ejercicio025.php">Ejecutar</a></td>
+                        <td><a href="mostrarcodigo/mostrarEjercicio025.php">Mostrar</a></td>
+                    </tr>
+                    <tr>
                         <td><span>Validacion.~ </span>Libreria Formato Castellano</td>
                         <td></td>
                         <td><a href="mostrarcodigo/mostrarLibreriaFormatoCastellano.php">Mostrar</a></td>

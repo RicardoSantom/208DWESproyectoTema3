@@ -83,24 +83,32 @@ form fieldset{
     border-left: #516D99 groove 3px;
     border-right: #516D99 groove 3px;
     box-shadow: 12px 8px 2px 2px #516D99;
-    background-image: linear-gradient(to right top, #ccb3af, #d7c3c4, #e1d3d7, #ece4e8, #f7f5f7);
+    background: rgb(175,186,204);
+    background: linear-gradient(90deg, rgba(175,186,204,1) 0%, rgba(175,186,204,1) 29%, rgba(247,247,245,1) 92%);
 }
 form p,form input,form label{
     display: inline-block;
     margin: 0.65rem 0.35rem;
     line-height: 1.25rem;
 }
+ul{
+    list-style: none;
+}
 form label{
     letter-spacing: 1px;
     color: #00006A;
     text-decoration: #00006A blink underline solid;
     text-underline-offset:5px;
+    font-weight: bolder;
 }
 form input{
     border: 2px #516D99 groove;
 }
 form input:hover{
     box-shadow: 2px 2px 2px 2px #666666;
+}
+span{
+    color: red;
 }
 legend{
     font-weight: bolder;
@@ -166,6 +174,7 @@ td a:hover{
     color: #666666;
     color: #FFC9B5;
 }
+td{width: 50%}
 #github:before{
     font-family: 'Fontawesome';
     content:'\f09b';
