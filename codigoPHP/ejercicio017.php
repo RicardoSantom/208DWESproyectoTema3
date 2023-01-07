@@ -74,8 +74,8 @@
                 $aAsientos[14][6] = ('Alejandro');
                 $aAsientos[19][14] = ('Manuel');
                 //Recorrido del array con foreach()
-                $contadorFilas=-1;
-                $contadorColumnas=-1;
+                $contadorFilas = -1;
+                $contadorColumnas = -1;
                 echo '<br><h2>Recorrido del array con foreach()</h2>';
                 echo '<table><caption>TEATRO OCUPADO</caption>';
                 foreach ($aAsientos as $valorFila) {
@@ -93,14 +93,14 @@
                 echo "<br><h2>Con bucle while()</h2><br>";
                 $indiceFilas = 0;
                 echo "<table>";
-                while ($indiceFilas <= $filas-1) {
+                while ($indiceFilas <= $filas - 1) {
                     echo "<tr>";
                     $indiceColumnas = 0;
-                    while ($indiceColumnas <= $columnas-1) {
+                    while ($indiceColumnas <= $columnas - 1) {
                         $asientoActual = $aAsientos[$indiceFilas][$indiceColumnas];
-                        if ($asientoActual != null){
+                        if ($asientoActual != null) {
                             echo "<td class='ocupado'>" . $asientoActual . "</td>";
-                        }else{
+                        } else {
                             echo "<td class='null'>VACIO</td>";
                         }
                         $indiceColumnas++;
@@ -114,12 +114,12 @@
             </article>
         </main>
         <footer>
-            <p>2022-23  IES LOS SAUCES. <a href="../../../index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
-            <a href="https://github.com/RicardoSantom/208DWESproyectoTema3" target="blank" id="github" title="RicardoSantom en GitHub">
+            <p>2022-23  IES LOS SAUCES. <a href="https://daw208.ieslossauces.es/index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
+            <a href="https://github.com/RicardoSantom/208DWESproyectoTema3" target="blank"  class="enlaces" id="github" title="RicardoSantom en GitHub">
             </a>
             <a href="https://www.linkedin.com/in/ricardo-santiago-tom%C3%A9/" id="linkedin" title="Ricardo Santiago Tomé en Linkedim" target="_blank"></a>
-            <a href="../../doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">face</span></a>
-            <a href="../indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
+            <a href="https://daw208.ieslossauces.es/doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">&#xE87C;</span></a>
+            <a href="https://daw208.ieslossauces.es/208DWESproyectoTema3/indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
         </footer>
     </body>
 </html>

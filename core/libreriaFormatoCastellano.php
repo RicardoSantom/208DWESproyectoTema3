@@ -4,7 +4,7 @@
  * @author Ricardo Santiago Tomé - RicardoSantom en Github https://github.com/RicardoSantom
  * Esta libreria contiene funciones para convertir a castellano fechas actuales, futuras o pasadas.
  */
-
+require_once 'libreriaCalculadora.php';
 /**
  * La funcion formatoCastellanoFechaActual no recibe nada
  * establece las variables regionales a España y devuelve una cadena
@@ -35,8 +35,12 @@ function formatoCastellanoFechaActual() {
  * @param $sumaDia int número de dias a sumar a la hora actual.
  * @param $sumaAnyo int número de años a sumar a la hora actual.
  * @return string Cadena formateada en castellano que contiene fecha y hora resultantes de sumar a la fecha y 
- * hora pasados como parámetros el resto de parámetros recibidos en el método.
+ * hora pasados como parámetros el resto de parámetros recibidos en la funcíón.
  */
+/*
+
+ * Esta función se implementará en el futuro recibiendo distintos tipos de parámetros.
+ * De esta manera se podrán construir fechas futuras manipulando todos, algunos o solo uno de los parámetros */
 function parametrosCastellanosFechaDistinta($oFechaOrigen,$sumaHora,$sumaMinuto,$sumaSegundo,$sumaMes,$sumaDia,$sumaAnyo) {
      date_default_timezone_set("Europe/Madrid");
     setlocale(LC_ALL, "es_ES.utf8");

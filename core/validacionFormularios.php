@@ -77,8 +77,7 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
 // Función para comprobar un campo AlfaNumerico
 // Return nada si es correcto, si hay errores devuelve un mensaje de error
 // Si es un 1 es obligatorio, si es un 0 no lo es
-# Ricardo Santiago elimina autoasignaciones de variables creando la nueva variable $cadenaConvertida.
-#Esta nueva variable
+// Ricardo Santiago Tomé elimina autoasignaciones de variables creando la nueva variable $cadenaConvertida.
     /**
      * Funcion comprobarAlfaNumerico
      * 
@@ -98,7 +97,7 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
         $cadenaConvertida = htmlspecialchars(strip_tags(trim((string) $cadena)));
         $mensajeError = null;
         //Si es obligatorio se hace la comprobación de que no está vacío
-        if ($obligatorio == 1 && $cadenaConvertida != '0') {
+        if (($obligatorio == 1) && ($cadenaConvertida != '0')) {
             $mensajeError = self::comprobarNoVacio($cadena);
         }
         $mensajeError .= self::comprobarMaxTamanio($cadenaConvertida, $maxTamanio);
@@ -478,7 +477,7 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
      */
     public static function comprobarMinTamanio($cadena, $tamanio) {
         $mensajeError = null;
-        if (strlen($cadena) < $tamanio && strlen($cadena) > 0) { //AÑADIDA SEGUNDA COMPROBACIÓN. Para que cuando el campo esté vacío no muestre este mensaje, sólo cuando haya mínimo 1 caracter para advertir del tamaño mínimo
+        if ((strlen($cadena) < $tamanio) && (strlen($cadena) > 0)) { //AÑADIDA SEGUNDA COMPROBACIÓN. Para que cuando el campo esté vacío no muestre este mensaje, sólo cuando haya mínimo 1 caracter para advertir del tamaño mínimo
             $mensajeError = " El tamaño mínimo es de " . $tamanio . " caracteres.";
         }
         return $mensajeError;

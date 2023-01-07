@@ -41,14 +41,14 @@
                 //Constante opcional inicializaca a 0
                 define("OPCIONAL", 0);
                 //Variables de maximos y minimos inicializadas a valores 'racionales'
-                define("TAMANYO_MINIMO_ALFABETICO", 1);
-                define("TAMANYO_MAXIMO_ALFABETICO", 255);
+                define("N_MINIMO_CARACTERES", 1);
+                define("N_MAXIMO_CARACTERES", 255);
                 define("TAMANYO_MINIMO_ALFANUMERICO", 1);
                 define("TAMANYO_MAXIMO_ALFANUMERICO", 255);
-                define("TAMANYO_MINIMO_ENTERO", 1);
-                define("TAMANYO_MAXIMO_ENTERO", 1000000);
-                define("TAMANYO_MINIMO_FLOAT", 1);
-                define("TAMANYO_MAXIMO_FLOAT", 300);
+                define("MINIMO_ENTERO", 1);
+                define("MAXIMO_ENTERO", 1000000);
+                define("MINIMO_FLOAT", 1);
+                define("MAXIMO_FLOAT", 300);
                 define("FECHA_MINIMA", '01/01/1900');
                 define("FECHA_MAXIMA", '01/01/2200');
                 define("TAMANO_MAXIMO_AREATEXTO", 255);
@@ -131,17 +131,17 @@
                 //Comprobar si se ha pulsado el boton enviar en el formulario
                 if (!empty($_REQUEST['enviar'])) {
                     //Comprobar si el campo alfabetico esta bien rellenado
-                    $aErrores['alfabeticoObligatorio'] = validacionFormularios::comprobarAlfabetico($_REQUEST['alfabeticoObligatorio'], TAMANYO_MAXIMO_ALFABETICO, TAMANYO_MINIMO_ALFABETICO, OBLIGATORIO);
-                    $aErrores['alfabeticoOpcional'] = validacionFormularios::comprobarAlfabetico($_REQUEST['alfabeticoOpcional'], TAMANYO_MAXIMO_ALFABETICO, TAMANYO_MINIMO_ALFABETICO, OPCIONAL);
+                    $aErrores['alfabeticoObligatorio'] = validacionFormularios::comprobarAlfabetico($_REQUEST['alfabeticoObligatorio'], N_MAXIMO_CARACTERES, N_MINIMO_CARACTERES, OBLIGATORIO);
+                    $aErrores['alfabeticoOpcional'] = validacionFormularios::comprobarAlfabetico($_REQUEST['alfabeticoOpcional'], N_MAXIMO_CARACTERES, N_MINIMO_CARACTERES, OPCIONAL);
                     //Comprobar si el campo alfanumerico esta bien rellenado
                     $aErrores['alfanumericoObligatorio'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['alfanumericoObligatorio'], TAMANYO_MAXIMO_ALFANUMERICO, TAMANYO_MINIMO_ALFANUMERICO, OBLIGATORIO);
                     $aErrores['alfanumericoOpcional'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['alfanumericoOpcional'], TAMANYO_MAXIMO_ALFANUMERICO, TAMANYO_MINIMO_ALFANUMERICO, OPCIONAL);
                     //Comprobar si el campo entero esta bien rellenado
-                    $aErrores['enteroObligatorio'] = validacionFormularios::comprobarEntero($_REQUEST['enteroObligatorio'], TAMANYO_MAXIMO_ENTERO, TAMANYO_MINIMO_ENTERO, OBLIGATORIO);
-                    $aErrores['enteroOpcional'] = validacionFormularios::comprobarEntero($_REQUEST['enteroOpcional'], TAMANYO_MAXIMO_ENTERO, TAMANYO_MINIMO_ENTERO, OPCIONAL);
+                    $aErrores['enteroObligatorio'] = validacionFormularios::comprobarEntero($_REQUEST['enteroObligatorio'], MAXIMO_ENTERO, MINIMO_ENTERO, OBLIGATORIO);
+                    $aErrores['enteroOpcional'] = validacionFormularios::comprobarEntero($_REQUEST['enteroOpcional'], MAXIMO_ENTERO, MINIMO_ENTERO, OPCIONAL);
                     //Comprobar si el campo float esta bien rellenado
-                    $aErrores['floatObligatorio'] = validacionFormularios::comprobarFloat($_REQUEST['floatObligatorio'], TAMANYO_MAXIMO_FLOAT, TAMANYO_MINIMO_FLOAT, OBLIGATORIO);
-                    $aErrores['floatOpcional'] = validacionFormularios::comprobarFloat($_REQUEST['floatOpcional'], TAMANYO_MAXIMO_FLOAT, TAMANYO_MINIMO_FLOAT, OPCIONAL);
+                    $aErrores['floatObligatorio'] = validacionFormularios::comprobarFloat($_REQUEST['floatObligatorio'], MAXIMO_FLOAT, MINIMO_FLOAT, OBLIGATORIO);
+                    $aErrores['floatOpcional'] = validacionFormularios::comprobarFloat($_REQUEST['floatOpcional'], MAXIMO_FLOAT, MINIMO_FLOAT, OPCIONAL);
                     //Comprobar si el campo fecha esta bien rellenado
                     $aErrores['fechaObligatorio'] = validacionFormularios::validarFecha($_REQUEST['fechaObligatorio'], FECHA_MAXIMA, FECHA_MINIMA, OBLIGATORIO);
                     $aErrores['fechaOpcional'] = validacionFormularios::validarFecha($_REQUEST['fechaOpcional'], FECHA_MAXIMA, FECHA_MINIMA, OPCIONAL);
@@ -450,19 +450,19 @@
                                             ?>>OpcionRadio1</label>
                                         <label for="OpcionRadio2">
                                             <input class="radiobuttonObligatorio" id="opcionRadio2" class="obligatorios"  type="radio" name="radiobuttonObligatorio" value="OpcionRadio2"
-                                                   <?php
-                                                   if (isset($_REQUEST['radiobuttonObligatorio']) && $_REQUEST['radiobuttonObligatorio'] == 'OpcionRadio2') {
-                                                       echo "checked";
-                                                   }
-                                                   ?>>OpcionRadio2</label>
+                                            <?php
+                                            if (isset($_REQUEST['radiobuttonObligatorio']) && $_REQUEST['radiobuttonObligatorio'] == 'OpcionRadio2') {
+                                                echo "checked";
+                                            }
+                                            ?>>OpcionRadio2</label>
                                         <label for="OpcionRadio3">
                                             <input class="radiobuttonObligatorio" id="opcionRadio3" class="obligatorios"  type="radio" name="radiobuttonObligatorio" value="OpcionRadio3"
-    <?php
-    if (isset($_REQUEST['radiobuttonObligatorio']) && $_REQUEST['radiobuttonObligatorio'] == 'OpcionRadio3') {
-        echo "checked";
-    }
-    ?>>OpcionRadio3</label>
-    <?php echo '<span>' . $aErrores['radiobuttonObligatorio'] . '</span>' ?>
+                                            <?php
+                                            if (isset($_REQUEST['radiobuttonObligatorio']) && $_REQUEST['radiobuttonObligatorio'] == 'OpcionRadio3') {
+                                                echo "checked";
+                                            }
+                                            ?>>OpcionRadio3</label>
+                                            <?php echo '<span>' . $aErrores['radiobuttonObligatorio'] . '</span>' ?>
                                     </div>
                                 </li>
                                 <!--Campo Checkbox Obligatorio-->
@@ -471,24 +471,24 @@
                                         <label for="checkboxObligatorio">Checkbox Obligatorio</label>
 
                                         <input class="checkboxObligatorio" id="OpcionCheckbox1" type="checkbox" class="obligatorios"  name="checkboxObligatorio[]"  value="OpcionCheckbox1" 
-                                               <?php
-                                               if (!empty($_REQUEST['checkboxObligatorio'])) {
-                                                   if (in_array('OpcionCheckbox1', $_REQUEST['checkboxObligatorio'])) {
-                                                       echo "checked";
-                                                   }
-                                               }
-                                               ?>><label for="OpcionCheckbox1">OpcionCheckbox1</label>
+                                        <?php
+                                        if (!empty($_REQUEST['checkboxObligatorio'])) {
+                                            if (in_array('OpcionCheckbox1', $_REQUEST['checkboxObligatorio'])) {
+                                                echo "checked";
+                                            }
+                                        }
+                                        ?>><label for="OpcionCheckbox1">OpcionCheckbox1</label>
 
                                         <input class="checkboxObligatorio" id="OpcionCheckbox2" type="checkbox" name="checkboxObligatorio[]"  value="OpcionCheckbox2">
-                                               <?php
-                                               if (!empty($_REQUEST['checkboxObligatorio'])) {
-                                                   if (in_array('OpcionCheckbox2', $_REQUEST['checkboxObligatorio'])) {
-                                                       echo "checked";
-                                                   }
-                                               }
-                                               ?><label for="OpcionCheckbox2">OpcionCheckbox2</label>
+                                        <?php
+                                        if (!empty($_REQUEST['checkboxObligatorio'])) {
+                                            if (in_array('OpcionCheckbox2', $_REQUEST['checkboxObligatorio'])) {
+                                                echo "checked";
+                                            }
+                                        }
+                                        ?><label for="OpcionCheckbox2">OpcionCheckbox2</label>
 
-    <?php echo '<span>' . $aErrores['checkboxObligatorio'] . '</span>' ?>
+                                        <?php echo '<span>' . $aErrores['checkboxObligatorio'] . '</span>' ?>
                                     </div>
                                 </li>
                                 <!--Campo ListaDesplegable Obligatorio-->
@@ -504,28 +504,28 @@
                                             <option value="OpcionLista1">OpcionLista1</option>
                                             <option value="OpcionLista2">OpcionLista2</option>
                                         </select>
-    <?php echo '<span>' . $aErrores['listaDesplegableObligatorio'] . '</span>' ?>
+                                        <?php echo '<span>' . $aErrores['listaDesplegableObligatorio'] . '</span>' ?>
                                     </div>
                                 </li>
                                 <!--Campo Boton Enviar-->
                                 <li>
-                                     <input type="submit" name="Enviar" value="Enviar" id="botonEnviar"/>
+                                    <input type="submit" name="Enviar" value="Enviar" id="botonEnviar"/>
                                 </li>
                             </ul>
                         </fieldset>
                     </form>
-    <?php
-}
-?>
+                    <?php
+                }
+                ?>
             </article>
         </main>
         <footer>
-            <p>2022-23  IES LOS SAUCES. <a href="../../../index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
+            <p>2022-23  IES LOS SAUCES. <a href="https://daw208.ieslossauces.es/index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
             <a href="https://github.com/RicardoSantom/208DWESproyectoTema3" target="blank"  class="enlaces" id="github" title="RicardoSantom en GitHub">
             </a>
             <a href="https://www.linkedin.com/in/ricardo-santiago-tom%C3%A9/" id="linkedin" title="Ricardo Santiago Tomé en Linkedim" target="_blank"></a>
-            <a href="../../doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">face</span></a>
-            <a href="../indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
+            <a href="https://daw208.ieslossauces.es/doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">&#xE87C;</span></a>
+            <a href="https://daw208.ieslossauces.es/208DWESproyectoTema3/indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
         </footer>
     </body>
 </html>

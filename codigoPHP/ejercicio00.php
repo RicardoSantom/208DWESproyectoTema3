@@ -13,7 +13,7 @@
         <title>Ejercicio 00 Tema3</title>
         <!-- Última actualización 23/11/2022 -->
         <style>
-        *{
+            *{
                 text-align: center;
             }
             form{
@@ -37,10 +37,10 @@
             form p{
                 display: inline-flex;
             }
-            </style>
+        </style>
     </head>
     <body>
-        <?php 
+        <?php
         /**
          * @author Ricardo Santiago Tomé RicardoSantom en Github <https://github.com/RicardoSantom>
          * @version 1.0
@@ -62,22 +62,25 @@
                 El resto del mensaje se imprimirá desde el código php embebido.
                 Función y objeto de esto "uso, disfrute y exhibición" de la interacción entre
                 lenguaje de marcas y código php embebido.-->
-                <h4 style="color:red">H<?php 
-                /*
-                 * Este comentario será visible en el mostrarCodigo correspondiente a este ejercicio.
-                 * La letra H del mensaje "Hola Mundo" ha sido impresa en pantalla como texto entre etiquetas html.
-                 * El resto del mensaje se imprimirá desde el código php embebido.
-                 */
-                echo("ola Mundo"); ?></h4>
+                <h4 style="color:red">H<?php
+                    /*
+                     * Este comentario será visible en el mostrarCodigo correspondiente a este ejercicio.
+                     * La letra H del mensaje "Hola Mundo" ha sido impresa en pantalla como texto entre etiquetas html.
+                     * El resto del mensaje se imprimirá desde el código php embebido.
+                     */
+                    echo("ola Mundo");
+                    ?>
+                </h4>
                 <?php phpinfo(); ?>
             </article>
         </main>
         <footer>
-            <p>2022-23  IES LOS SAUCES. <a href="../../../index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
-            <a href="https://github.com/RicardoSantom/208DWESproyectoTema3" target="blank" id="github" title="RicardoSantom en GitHub"></a>
+            <p>2022-23  IES LOS SAUCES. <a href="https://daw208.ieslossauces.es/index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
+            <a href="https://github.com/RicardoSantom/208DWESproyectoTema3" target="blank"  class="enlaces" id="github" title="RicardoSantom en GitHub">
+            </a>
             <a href="https://www.linkedin.com/in/ricardo-santiago-tom%C3%A9/" id="linkedin" title="Ricardo Santiago Tomé en Linkedim" target="_blank"></a>
-            <a href="../../doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">face</span></a>
-            <a href="../indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
+            <a href="https://daw208.ieslossauces.es/doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">&#xE87C;</span></a>
+            <a href="https://daw208.ieslossauces.es/208DWESproyectoTema3/indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
         </footer>
     </body>
 </html>

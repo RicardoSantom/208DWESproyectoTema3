@@ -73,13 +73,13 @@
                      * Acumulación del valor en cada vuelta del bucle en variable de tipo entero $iSueldoTotal
                      * lo realiza utilizando la anteriormente comentada función current().
                      */
-                   $iSueldoTotal += current($aSueldoSemana);
-                   /*
-                    * La función next con parámetro del array $aSueldoSemana avanza el puntero interno del array
-                    * para que el valor a evaluar en la siguiente iteración del bucle sea el siguiente y no el actual.
-                    * "Devuelve el valor del array en el siguiente lugar que está apuntado por el puntero interno o false si no hay más elementos."
-                    * Fuente https://www.php.net/manual/es/function.next.php
-                    */
+                    $iSueldoTotal += current($aSueldoSemana);
+                    /*
+                     * La función next con parámetro del array $aSueldoSemana avanza el puntero interno del array
+                     * para que el valor a evaluar en la siguiente iteración del bucle sea el siguiente y no el actual.
+                     * "Devuelve el valor del array en el siguiente lugar que está apuntado por el puntero interno o false si no hay más elementos."
+                     * Fuente https://www.php.net/manual/es/function.next.php
+                     */
                     next($aSueldoSemana);
                 }
                 /*
@@ -90,12 +90,12 @@
             </article>
         </main>
         <footer>
-            <p>2022-23  IES LOS SAUCES. <a href="../../../index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
+            <p>2022-23  IES LOS SAUCES. <a href="https://daw208.ieslossauces.es/index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
             <a href="https://github.com/RicardoSantom/208DWESproyectoTema3" target="blank"  class="enlaces" id="github" title="RicardoSantom en GitHub">
             </a>
             <a href="https://www.linkedin.com/in/ricardo-santiago-tom%C3%A9/" id="linkedin" title="Ricardo Santiago Tomé en Linkedim" target="_blank"></a>
-            <a href="../../doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">face</span></a>
-            <a href="../indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
+            <a href="https://daw208.ieslossauces.es/doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">&#xE87C;</span></a>
+            <a href="https://daw208.ieslossauces.es/208DWESproyectoTema3/indexProyectoTema3.php" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto Tema3</a>
         </footer>
     </body>
 </html>
