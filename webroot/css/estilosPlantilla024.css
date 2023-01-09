@@ -11,14 +11,14 @@
 html,body{
     min-width: 290px;
     height: 100%;
-    min-height: 2024px;
 }
 body{
     background-color: #fbfaf8;
 }
-/*main{
-    padding-bottom: 6em;
-}*/
+main{
+    padding-bottom: 4em;
+    padding-top: 2rem;
+}
 article{
     width: 99%;
     margin-left: 5px;
@@ -79,6 +79,7 @@ form{
     margin: 0 auto;
     position: relative;
     margin-bottom: 4rem;
+    height: 100%;
 }
 form fieldset{
     border-bottom: #516D99 groove 3px;
@@ -133,8 +134,15 @@ form p{
     width: 6.5rem;
     height: 3rem;
     background-color: #DAF7A6;
-    position: relative;
-    left: 50%;
+    display: block;
+    float: left;
+    border: 2px #669900 solid;
+    font-weight: bold;
+}
+#botonReset{
+    width: 6.5rem;
+    height: 3rem;
+    background-color: #ff6666;
     border: 2px #669900 solid;
     font-weight: bold;
 }

@@ -78,6 +78,7 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
 // Return nada si es correcto, si hay errores devuelve un mensaje de error
 // Si es un 1 es obligatorio, si es un 0 no lo es
 // Ricardo Santiago Tomé elimina autoasignaciones de variables creando la nueva variable $cadenaConvertida.
+
     /**
      * Funcion comprobarAlfaNumerico
      * 
@@ -108,6 +109,7 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
 // Función para comprobar si es un campo entero
 // Return null es correcto, si no muestra el mensaje de error
 // Si es un 1 es obligatorio, si es un 0 no lo es
+
     /**
      * 
      * Funcion comprobarEntero
@@ -168,7 +170,7 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
      * @return null|string Devuelve una cadena con el mensaje de error.  
      */
     public static function comprobarNumericoMaximoMinimo($integer, $max = PHP_INT_MAX, $min = -PHP_INT_MAX) {
-        $mensajeError=null;
+        $mensajeError = null;
         if (!is_numeric($integer)) { //SI NO ES UN NÚMERO O STRING NUMÉRICO
             $mensajeError = "El campo no es un entero. ";
         } else {
