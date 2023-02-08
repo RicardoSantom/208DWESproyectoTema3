@@ -141,6 +141,10 @@
                 imprimirTablaVariablesSuperGlobales($_POST, "\$_POST");
                 imprimirTablaVariablesSuperGlobales($_GET, "\$_GET");
                 ?>
+                <h4>Impresión de $_SERVER con var_dump</h4>
+                <?php 
+                var_dump($_SERVER);
+                ?>
                 <?php phpinfo();?>
             </article>
             <!-- La finalidad de incluir el siguiente formulario en este ejercicio es dotar

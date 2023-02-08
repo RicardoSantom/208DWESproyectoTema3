@@ -66,6 +66,10 @@
                     //Impresión del valor acumulado de $sueldoDiario en $iSueldoTotal
                     print("El sueldo total de la semana es: $iSueldoTotal €");
                     ?></p>
+                <h4>Impresión del array asociativo con la función var_dump()</h4>
+                <?php 
+                    echo var_dump($aSueldoSemana);
+                ?>
             </article>
         </main>
         <footer>
