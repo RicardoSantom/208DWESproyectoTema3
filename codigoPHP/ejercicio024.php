@@ -99,7 +99,7 @@
                             <input type="text" id="Nombre" name="Nombre" class="obligatorios" value="<?php echo $_REQUEST['Nombre'] ?? '' ?>"/>
                             <p><?php echo '<span style="color: red;">' . $aErrores['Nombre'] . '</span>'; ?></p><br>
                             <label for="NotaMedia">Introduzca su nota como entero:</label>
-                            <input type = "number" id="NotaMedia" name = "NotaMedia" class="obligatorios" min="0" max="10" value ="<?php echo $_REQUEST['NotaMedia'] ?? '' ?>"/>
+                            <input type = "number" id="NotaMedia" name="NotaMedia" class="obligatorios" min="0" max="10" value="<?php echo $_REQUEST['NotaMedia'] ?? '' ?>"/>
                             <p><?php echo '<span style="color: red;">' . $aErrores['NotaMedia'] . '</span>'; ?></p><br>
                             <label for="FechaNacimiento">Introduzca su fecha de nacimiento:</label>
                             <input type = "date" id="FechaNacimiento" name = "FechaNacimiento" class="obligatorios" value ="<?php echo $_REQUEST['FechaNacimiento'] ?? '' ?>"/>

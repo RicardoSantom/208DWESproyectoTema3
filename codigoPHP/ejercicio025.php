@@ -236,7 +236,7 @@
                             $_REQUEST[$clave] = '';
                             $entradaOk = false;
                         }
-                    };
+                    }
                 } else {
                     $entradaOk = false;
                 }
